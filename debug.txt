@@ -1,0 +1,5 @@
+{
+    "girilen_email": "altay12223fbak@gmail.com",
+    "veritaban\u0131_kullan\u0131c\u0131": false,
+    "\u015fifre_e\u015fle\u015fmesi": "kullan\u0131c\u0131 yok"
+}
