@@ -14,6 +14,7 @@ class RegisterController
         $password = $_POST['password'] ?? '';
         $avatar   = null;
         $errors   = [];
+        $csrfToken = $_POST['csrf_token'] ?? '';
 
           // CSRF kontrolü
         if (empty($csrfToken) || $csrfToken !== ($_SESSION['csrf_token'] ?? '')) {

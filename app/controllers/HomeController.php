@@ -1,14 +1,19 @@
 <?php
-namespace app\Controllers;
+namespace App\Controllers;
 
-use app\core\View;
+use App\Core\View;
+use App\Models\ProductModel;
 
 class HomeController
 {
     public function index()
     {
-        View::render('home');
+        $productModel = new ProductModel();
+        $products = $productModel->getAll();
+
+        View::render('home', [
+            'title'    => 'Anasayfa',
+            'products' => $products,
+        ]);
     }
-    
 }
-?>

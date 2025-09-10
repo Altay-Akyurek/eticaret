@@ -1,5 +1,5 @@
 <?php
-namespace app\Help;
+namespace App\Help;
 
 class Upload
 {

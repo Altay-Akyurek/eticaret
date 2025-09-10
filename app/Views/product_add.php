@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ürün Ekle</title>
+</head>
+<body>
+    <h2>Ürün Ekle</h2>
+    <form method="POST" action="#" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Ürün adı" required />
+        <input type="number" step="0.01" name="price" placeholder="Fiyat" required />
+        <button type="submit">Kaydet</button>
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

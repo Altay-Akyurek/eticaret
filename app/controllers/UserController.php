@@ -1,9 +1,9 @@
 <?php
 namespace App\Controllers;
 
-use app\core\View;
-use app\Help\Validation;
-use app\Help\Upload;
+use App\Core\View;
+use App\Help\Validation;
+use App\Help\Upload;
 
 class UserController
 {
@@ -49,6 +49,13 @@ class UserController
         }else{
             View::render('register');
         }
+    }
+        public function logout()
+    {
+        session_start();
+        unset($_SESSION['admin_logged']);
+        header('Location: /php/php_calısmaları/eticaret-main/auth/logout');
+        exit;
     }
 }
 ?>
